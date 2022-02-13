@@ -4,7 +4,7 @@
     display: grid;
 
     grid-template: [row-1-start] 100px [row-1-end row-2-start] 100px [row-2-end]
-        / repeat(12, [small] 20px [large] 40px);
+        / repeat(6, minmax(100px, 1fr));
 
     /* grid-gap: 10px 20px; */
     /* grid-template-areas: 
@@ -14,7 +14,7 @@
     ; */
 }
 
-.grid div:nth-child(1){
+/* .grid div:nth-child(1){
     grid-column: 1 / span 24;
 }
 
@@ -36,4 +36,4 @@
 
 .grid div:nth-child(6){
     grid-column: auto / span 12;
-}
+} */
