@@ -2,9 +2,9 @@
 
 .grid {
     display: grid;
-
-    grid-template: [row-1-start] 100px [row-1-end row-2-start] 100px [row-2-end]
-        / repeat(6, minmax(100px, 1fr));
+    grid-gap: 10px;
+    grid-template: 100px 100px 100px
+        / repeat(auto-fit, 100px);
 
     /* grid-gap: 10px 20px; */
     /* grid-template-areas: 
